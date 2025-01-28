@@ -101,7 +101,7 @@ async def give_filter(client, message):
             return
         else:
             return await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention},\n\nYᴏᴜʀ Rᴇǫᴜᴇꜱᴛ Iꜱ Aʟʀᴇᴀᴅʏ Aᴠᴀɪʟᴀʙʟᴇ ✅\n\n📂 Fɪʟᴇꜱ Fᴏᴜɴᴅ : {str(total_results)}\n🔍 Sᴇᴀʀᴄʜ :</b> <code>{search}</code>\n\n<b>‼️ ᴛʜɪs ɪs ᴀ <u>Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ</u> Sᴏ Tʜᴀᴛ Yᴏᴜ Cᴀɴ'ᴛ Gᴇᴛ Fɪʟᴇs Fʀᴏᴍ Hᴇʀᴇ...\n\n📝 Sᴇᴀʀᴄʜ Hᴇʀᴇ : 👇</b>",   
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 Jᴏɪɴ Aɴᴅ Sᴇᴀʀᴄʜ Hᴇʀᴇ 🔎", url=f"https://t.me/moviekoodu1")]]))
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 Jᴏɪɴ Aɴᴅ Sᴇᴀʀᴄʜ Hᴇʀᴇ 🔎", url=f"https://t.me/jjj")]]))
         
 
 @Client.on_message(filters.private & filters.text & filters.incoming)
@@ -114,7 +114,7 @@ async def pm_text(bot, message):
     if user_id in ADMINS: return # ignore admins
     await message.reply_text(
          text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ 👇</b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 Rᴇǫᴜᴇsᴛ Hᴇʀᴇ ", url=f"https://t.me/moviekoodu1")]])
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 Rᴇǫᴜᴇsᴛ Hᴇʀᴇ ", url=f"https://t.me/jjj")]])
     )
     await bot.send_message(
         chat_id=LOG_CHANNEL,
@@ -348,9 +348,7 @@ async def qualities_cb_handler(client: Client, query: CallbackQuery):
     btn.append([InlineKeyboardButton(text="↭ ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs ↭", callback_data=f"fq#homepage#{key}")])
 
     await query.edit_message_reply_markup(InlineKeyboardMarkup(btn))
- # https://t.me/moviekoodu
-# https://t.me/moviekoodu
-
+ 
 @Client.on_callback_query(filters.regex(r"^fq#"))
 async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
     _, qual, key = query.data.split("#")
@@ -1372,7 +1370,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ Hᴇʀᴇ 🔎", url="https://t.me/moviekoodu")
+                 InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ Hᴇʀᴇ 🔎", url="https://t.me/moviekoodu1")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1397,7 +1395,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ Hᴇʀᴇ 🔎", url="https://t.me/moviekoodu")
+                 InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ Hᴇʀᴇ 🔎", url="https://t.me/moviekoodu1")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1769,13 +1767,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     #jisshu
     elif query.data == "JoinUᴘᴅᴀᴛᴇs":
         buttons = [[
-            InlineKeyboardButton('⚜️ Oᴜʀ Cʜᴀɴɴᴇʟs ⚜️', url='https://t.me/moviekoodu')
+            InlineKeyboardButton('⚜️ Oᴜʀ Cʜᴀɴɴᴇʟs ⚜️', url='https://t.me/moviekoodu1')
         ],[
-            InlineKeyboardButton('🍀 Mᴏᴠɪᴇs Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ 🍀', url='https://t.me/Kuttmoviekoodu')
+            InlineKeyboardButton('🍀 Mᴏᴠɪᴇs Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ 🍀', url='https://t.me/moviekoodu1')
         ],[
-            InlineKeyboardButton('🥀 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 🥀', url='https://t.me/moviekoodu')
+            InlineKeyboardButton('🥀 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 🥀', url='https://t.me/moviekoodu1')
         ],[
-            InlineKeyboardButton('✉️ Rᴇǫᴜᴇsᴛ Gʀᴏᴜᴘ ✉️', url='https://t.me/moviekoodu')
+            InlineKeyboardButton('✉️ Rᴇǫᴜᴇsᴛ Gʀᴏᴜᴘ ✉️', url='https://t.me/moviekoodu1')
         ],[
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
@@ -2792,8 +2790,7 @@ async def advantage_spell_chok(client, message):
         await message.delete()
     except:
         pass
-# https://t.me/moviekoodu
-# https://t.me/moviekoodu
+
 async def manual_filters(client, message, text=False):
     settings = await get_settings(message.chat.id)
     group_id = message.chat.id
