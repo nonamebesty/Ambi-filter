@@ -65,8 +65,8 @@ APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # Others
 VERIFY = bool(environ.get('VERIFY', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'runurl.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'c5046fc2c519ed19a7f7d501dfc70b9c37a01614')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'modijiurl.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'e5a0df550303e31db72c8924e40e706976a2adb2')
 
 #SHORTLINK_URL = 'krownlinks.com'
 #SHORTLINK_API = '10c45cd3943f38044756d4822d8691efd634d174'
@@ -78,7 +78,7 @@ MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/moviekoodu1')
 CHNL_LNK = environ.get('CHNL_LNK', '')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/demoshort/67')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/demoshort/62')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', '✯ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ : @JAsuran123_bot')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001966055101')) #Log channel id ( make sure bot is admin )
